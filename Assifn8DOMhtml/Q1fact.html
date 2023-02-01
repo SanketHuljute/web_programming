@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        function cal_fact(num)
+        {
+            var fact=1 
+            temp=num;
+            while(num>0)
+            {
+                fact=fact*num;
+                num--;
+            }
+            alert("Factorial of "+temp+" is "+fact);
+            document.getElementById("fact").innerHTML="Factorial of "+temp+" is "+fact;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table border="1" style="background-color: orange;">
+            <tr>
+                <td><label for="Number">Enter the number</label></td>
+                <td><input type="number" name="num1" placeholder="Enter the number..." value="num"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="CALFact" onclick="cal_fact(num1.value)"/></td>
+            </tr>
+        </table>
+    </form>
+
+    <p id="fact" ></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dfor each</title>
+    <Script>
+        document.write("<ul>");
+        function myitr(value,index)
+        {
+              document.write("<li>"+value+" present at "+index+"</li>");
+
+        }
+        document.write("</ul>");
+
+        document.write(" USING NAMED FUNCTION");
+        document.write("<br/>");
+        document.write("<br/>");
+    var arr=[40,36,25,85,10,30];
+    arr.forEach(myitr);
+
+    document.write("<br/>***********************************************<br/>");
+    document.write(" USING ANONYMOUS FUNCTION<br/>");
+    document.write("<br/>");
+     document.write("<br/> <ul>");
+      
+        arr.forEach(function(value) { document.write("<li>"+value+"</li>")})
+        document.write("<br/>");
+        document.write("<br/>");
+     arr.forEach(function(value,index) { document.write("<li>"+value+ " at index  "+index+"</li>")})
+
+     document.write("</ul> <br/>");
+
+     document.write("<br/>***********************************************<br/>");
+     document.write(" USING ARROW FUNCTION<br/>");
+     document.write("<br/>");
+     document.write("<br/> <ol type='1'>");
+
+     arr.forEach((v) =>{document.write("<li>"+v+"</li>")})
+
+     document.write("</ol> <br/>");
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>

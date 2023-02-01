@@ -1,0 +1,262 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script> 
+    // $(document).ready(function() { $("#hide").click(function ()  { $("p").hide(4000);  });
+    //         //$("p").hide();
+    //         //$("p").hide("slow");
+      
+    //     $("#show").click(function() {
+    //    // $("p").show();
+    //     //$("p").show("slow");
+    //     $("p").show("fast",function() {
+    //         alert("show done");
+    //     });
+
+    //     $("#toggle").click(function() {
+    //     $("p").toggle();
+    //     });
+
+      
+
+    // });
+    // });
+
+
+    $(document).ready(function() {
+        $("#toggle").click(function() {
+      $("p").toggle();
+      });
+    });
+
+    
+  
+    </script>
+</head>
+<body>
+    <p>This paragraph contains unique properties it hide/show/toggle onclick of buttons</p>
+    <button id="hide">hide para</button>
+    <button id="show">show para</button>
+    <button id="toggle">toggle para</button>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+             $("img").mouseover(function() {
+             $(this).fadeOut("slow");
+             });
+             
+             $("img").mouseout(function() {
+                $(this).fadeIn("slow");
+             });
+        });
+
+
+        // $(document).ready(function(){
+        //     $("img").mousedown(function(){
+        //         $(this).fadeout("slow");
+        //         });
+
+        //     $("img").mouseup(function(){
+        //         $(this).fadeIn("slow")
+        //     })    
+        // })
+    </script>
+</head>
+<body>
+    <table border:0>
+        <tr>
+            <td> <img src="i1.jpg" width="200" height="200" /></td>
+            <td> <img src="i2.jpg" width="200" height="200" /></td>
+            <td> <img src="i3.jpg" width="200" height="200" /></td>
+             </tr>
+
+             <tr>
+                <td> <img src="i4.jpg" width="200" height="200" /></td>
+                <td> <img src="i5.jpg" width="200" height="200" /></td>
+                <td> <img src="i6.jpg" width="200" height="200" /></td>
+                 </tr>
+
+                 <tr>
+                    <td> <img src="i9.jpg" width="200" height="200" /></td>
+                    <td> <img src="oppo.jpg" width="200" height="200" /></td>
+                    <td> <img src="i9.jpg" width="200" height="200" /></td>
+                     </tr>
+
+    </table>
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+           $("a").click(function() {
+            $(this).next().slideDown();
+           })
+
+           $("#hide").click(function() {
+            $(this).parent().slideUp();
+           })
+        });
+
+        
+    </script>
+</head>
+<body>
+<div> 
+    <h1> List of mobiloes </h1><br/>
+</div>
+
+<strong> Iphone :<strong>
+     
+<div id="details" > 
+    <a id="show" href="#" > view specifications</a>
+    <ul>
+    <img src="oppo.jpg" width="150" height="150"/>
+
+    <li> display: Super Retina XDR OLED, HDR10, Dolby Vision, 800 nits (HBM), 1200 nits (peak)</li>
+    <li>camera: 12 MP, f/1.5, 26mm (wide), 1/1.7", 1.9µm, dual pixel PDAF, sensor-shift OIS 12 MP, f/2.4, 13mm, 120˚ (ultrawide)</li>
+     <li> feature: Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support</li>   
+     <li>memory: 128GB 6GB RAM, 256GB 6GB RAM, 512GB 6GB RAM</li>
+
+<a id="hide" href="#">Hide details</a>
+</ul>
+</div>
+
+
+</body>
+</html> -->
+
+
+
+
+<!--<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+            $(document).ready(function() {
+           $("button").click(function() {
+            $(this).next().toggle();
+           })
+
+          
+        });
+
+    </script>
+</head>
+<body>
+<div>
+    <th>Question 1 Sample Text</th>
+    <button id="toggle" style="background-color:red" >click</button>
+    <p style="display:none; background-color:yellow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi reprehenderit, quo, necessitatibus, nulla iure aliquam adipisci aperiam asperiores deserunt excepturi voluptatum magni dicta quas corrupti repudiandae id impedit? Facere perspiciatis harum natus cupiditate labore aperiam consectetur. Incidunt quos aut quas aperiam veritatis sint debitis sunt exercitationem molestias. Ad earum, quo veritatis nihil repellat iure, repellendus at consequatur sunt hic qui, reprehenderit laborum expedita molestiae cumque numquam veniam libero odio porro et aperiam omnis in ducimus debitis. Magni omnis asperiores reprehenderit eaque dicta expedita dignissimos, suscipit obcaecati ipsam repellendus iste aliquam. Voluptas nisi, libero officia aut minus tempora distinctio cupiditate minima.</p>
+
+</div>
+
+<div>
+    <th>This is Question 2</th>
+    <button id="toggle" style="background-color:red">click</button>
+    <p style="display:none ;background-color:greenyellow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi reprehenderit, quo, necessitatibus, nulla iure aliquam adipisci aperiam asperiores deserunt excepturi voluptatum magni dicta quas corrupti repudiandae id impedit? Facere perspiciatis harum natus cupiditate labore aperiam consectetur. Incidunt quos aut quas aperiam veritatis sint debitis sunt exercitationem molestias. Ad earum, quo veritatis nihil repellat iure, repellendus at consequatur sunt hic qui, reprehenderit laborum expedita molestiae cumque numquam veniam libero odio porro et aperiam omnis in ducimus debitis. Magni omnis asperiores reprehenderit eaque dicta expedita dignissimos, suscipit obcaecati ipsam repellendus iste aliquam. Voluptas nisi, libero officia aut minus tempora distinctio cupiditate minima.</p>
+
+</div>
+
+<div>
+    <th>Another Question is here</th>
+    <button id="toggle" style="background-color:red">click</button>
+    <p style="display:none;background-color:pink">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi reprehenderit, quo, necessitatibus, nulla iure aliquam adipisci aperiam asperiores deserunt excepturi voluptatum magni dicta quas corrupti repudiandae id impedit? Facere perspiciatis harum natus cupiditate labore aperiam consectetur. Incidunt quos aut quas aperiam veritatis sint debitis sunt exercitationem molestias. Ad earum, quo veritatis nihil repellat iure, repellendus at consequatur sunt hic qui, reprehenderit laborum expedita molestiae cumque numquam veniam libero odio porro et aperiam omnis in ducimus debitis. Magni omnis asperiores reprehenderit eaque dicta expedita dignissimos, suscipit obcaecati ipsam repellendus iste aliquam. Voluptas nisi, libero officia aut minus tempora distinctio cupiditate minima.</p>
+
+</div>
+
+<div>
+    <th>sample heading</th>
+    <button id="toggle" style="background-color:red">click</button>
+    <p style="display:none;background-color:blueviolet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi reprehenderit, quo, necessitatibus, nulla iure aliquam adipisci aperiam asperiores deserunt excepturi voluptatum magni dicta quas corrupti repudiandae id impedit? Facere perspiciatis harum natus cupiditate labore aperiam consectetur. Incidunt quos aut quas aperiam veritatis sint debitis sunt exercitationem molestias. Ad earum, quo veritatis nihil repellat iure, repellendus at consequatur sunt hic qui, reprehenderit laborum expedita molestiae cumque numquam veniam libero odio porro et aperiam omnis in ducimus debitis. Magni omnis asperiores reprehenderit eaque dicta expedita dignissimos, suscipit obcaecati ipsam repellendus iste aliquam. Voluptas nisi, libero officia aut minus tempora distinctio cupiditate minima.</p>
+
+</div>
+
+<div>
+    <th>sample Question heading</th>
+    <button id="toggle" style="background-color:red">click</button>
+    <p style="display:none;background-color:aquamarine">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi reprehenderit, quo, necessitatibus, nulla iure aliquam adipisci aperiam asperiores deserunt excepturi voluptatum magni dicta quas corrupti repudiandae id impedit? Facere perspiciatis harum natus cupiditate labore aperiam consectetur. Incidunt quos aut quas aperiam veritatis sint debitis sunt exercitationem molestias. Ad earum, quo veritatis nihil repellat iure, repellendus at consequatur sunt hic qui, reprehenderit laborum expedita molestiae cumque numquam veniam libero odio porro et aperiam omnis in ducimus debitis. Magni omnis asperiores reprehenderit eaque dicta expedita dignissimos, suscipit obcaecati ipsam repellendus iste aliquam. Voluptas nisi, libero officia aut minus tempora distinctio cupiditate minima.</p>
+
+</div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+            $(document).ready(function() {
+           $("img").click(function() {
+            $(this).parent().remove();
+           })
+
+          
+        });
+
+    </script>
+</head>
+<body>
+
+    <div>
+        <th><Strong>Sample heading1</Strong></th>
+        <!-- <button id="toggle" style="background-color:red">click</button> 
+        <img src="oppo.jpg" width="15" height="15">
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore placeat molestias numquam, consequatur voluptate at fugit hic necessitatibus architecto facere temporibus ratione quaerat tenetur expedita? Omnis debitis perferendis odit mollitia? Soluta reprehenderit incidunt commodi. Molestias, doloremque nesciunt. Suscipit voluptates facilis qui dolorum, ipsam perferendis ipsum perspiciatis, iure consectetur inventore quas officiis assumenda ex ducimus similique dignissimos. Corporis modi quam quae perspiciatis accusamus totam! Molestias, libero soluta? Adipisci aliquam expedita aut temporibus odio et, nam possimus sed quos architecto, autem corporis perspiciatis laborum impedit sequi sunt inventore voluptas placeat ea quo consequuntur dolor molestiae laboriosam a. Modi illum odit voluptate?</p>
+    </div>
+
+    <div>
+        <th><Strong>Sample heading2</Strong></th>
+        <!-- <button id="toggle" style="background-color:red">click</button> 
+        <img src="oppo.jpg" width="15" height="15">
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore placeat molestias numquam, consequatur voluptate at fugit hic necessitatibus architecto facere temporibus ratione quaerat tenetur expedita? Omnis debitis perferendis odit mollitia? Soluta reprehenderit incidunt commodi. Molestias, doloremque nesciunt. Suscipit voluptates facilis qui dolorum, ipsam perferendis ipsum perspiciatis, iure consectetur inventore quas officiis assumenda ex ducimus similique dignissimos. Corporis modi quam quae perspiciatis accusamus totam! Molestias, libero soluta? Adipisci aliquam expedita aut temporibus odio et, nam possimus sed quos architecto, autem corporis perspiciatis laborum impedit sequi sunt inventore voluptas placeat ea quo consequuntur dolor molestiae laboriosam a. Modi illum odit voluptate?</p>
+    </div>
+
+   
+   
+</body>
+</html> -->

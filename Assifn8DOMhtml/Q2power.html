@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power of the number </title>
+    <script>
+        function power_num(num1,num2)
+        {
+            var res=1;
+            for(var i=1;i<=num2;i++)
+            {
+                res=res*num1;
+            }
+            alert(num1+" is the power of "+num2+" is "+res);
+            document.getElementById("power").innerHTML=num1+" is the power of "+num2+" is "+res;
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <table border="1" style="background-color: orangered;">
+            <tr>
+                <td>Enetr the base number:</td>
+                <td><input tpye="number" name="num1"  /></td>
+            </tr>
+            <tr>
+                <td>Enter the power:</td>
+                <td><input type="number" name="num2" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Power" onclick="power_num(num1.value,num2.value)"></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <p id="power" ></p>
+</body>
+</html>

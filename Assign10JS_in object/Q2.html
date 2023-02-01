@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(d1)
+                {
+                    var cdate = new Date(d1);
+                    document.write(cdate.getDate());
+                }
+
+                function f2(d1)
+                {
+                    var cdate = new Date(d1);
+                    document.write(cdate.getMonth());
+                }
+
+                function f3(d1)
+                {
+                    var cdate = new Date(d1);
+                    document.write(cdate.getFullYear());
+                }
+    </script>
+</head> 
+<body>
+    <form>
+        Enter bdate : <input type="date" name="bdate" id="dob"/> 
+        <br/>
+        <button type="button"  onclick="f1(bdate.value)">getdate</button>
+        <br/>
+        <button type="button"  onclick="f2(bdate.value)">getmonth</button>
+        <br/>
+
+        <button type="button"  onclick="f3(bdate.value)">getyear</button>
+        <br/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <script>
+
+        var imgarr=["img3.jpg","images89.jpg","images5.jpg","i.jpg"];
+        var index=0;
+        function PrevImg()
+        {
+            index--;
+            if(index<0)
+            {
+                index=imgarr.length-1;
+            }
+            document.getElementById("myImg").src=imgarr[index];
+        }
+
+        function NextImg()
+        {
+            index++;
+            if(index==imgarr.length)
+            {
+                index=0;
+            }
+            document.getElementById("myImg").src=imgarr[index];
+        }
+    </script>
+
+</head>
+<body>
+    <!-- <form  style="background-image:url('img8.jpg')"> -->
+    <img src="img6.jpg " width="400"  height="400" id="myImg"  />
+        <br/>
+        
+    <button  onclick="PrevImg()">Prev</button>
+    <button onclick="NextImg()">Next</button>
+
+    <!-- </form> -->
+</body>
+</html>

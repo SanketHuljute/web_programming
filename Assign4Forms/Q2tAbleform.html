@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+</head>
+<body>
+    <table border="1" style="border-collapse:collapse">
+        <form action=" " method=" ">
+        <tr>
+            <td colspan="2">
+                <h3>Visitor Information</h3>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="email" >Email Address:</label></td>
+            <td><input type="text" name="email" placeholder="type email here"/></td>
+        </tr>
+
+        <tr>
+            <td> <label for="select" >Do you use web for:</label> </td>
+            <td>
+                <input type="checkbox" name="r1" / > Research
+                <input type="checkbox" name="p1" />Purchase
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="occu" >Occupation:</label></td>
+            <td>
+                <select name="selectone">
+                    <option>Farmer</option>
+                    <option>Engineer</option>
+                    <option>Doctor</option>
+                    <option>Shopkeeper</option>
+                </select>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td><label for="select" >Want us to send you junk email?</label></td>
+            <td>
+                <input type="radio" name="r1" /> Research
+                <input type="radio" name="r1" />Purchase
+            </td>
+
+
+        <tr> 
+            <td><input type="submit" value="SUBMIT" /></td>
+        <td><input type="reset" value="RESET" /></td>
+    </tr>
+        </form>
+    </table>
+</body>
+</html>

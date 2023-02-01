@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+
+    <script>
+
+       var arr=[13,7,5,24];
+      
+        function prime(v)
+        {
+           
+            var flag= true;
+
+            for(i=2;i<v/2;i++)
+            {
+                if(v%i==0)
+                {
+                    flag=false;
+                    break;
+                }
+
+            }
+            if(flag==true)
+            {
+               return true;
+            }
+            else
+                return false;
+
+        }
+        var allprime=arr.every(prime);
+
+     document.write("Prime: "+allprime);
+
+     var allprime=arr.some(prime);
+
+document.write("<br/> Prime: "+allprime);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

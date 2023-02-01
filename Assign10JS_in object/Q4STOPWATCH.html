@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPWATCH</title>
+    <script>
+hh = 0
+mm = 0
+ss = 0
+        function startTime() {
+    ss++;
+    if (ss == 60) {
+        ss = 0;
+        mm++;
+
+    }
+    if (mm == 60) {
+        mm = 0;
+        hh++;
+    }
+
+    document.getElementById("p").innerHTML = hh + ":" + mm + ":" + ss;
+
+    num = setTimeout(startTime, 1000);
+
+}
+
+function pauseTime() {
+
+    clearTimeout(num);
+
+}
+
+function resetTime() {
+    //clearTimeout(num);
+    pauseTime();
+    hh = 0;
+    mm = 0;
+    ss = 0;
+    document.getElementById("p").innerHTML = hh + ":" + mm + ":" + ss;
+}
+    </script>
+</head>
+<body>
+    <p id="p" style="text-align:center ; padding-top: 200px; font-size:40px;">
+    
+    </p>
+<div style="text-align:center ">
+    <button onclick="startTime()">START</button>
+    <button onclick="pauseTime()">STOP</button>
+    <button onclick="resetTime()">RESET</button>
+</div>
+
+</body>
+</html>

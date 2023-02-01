@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Factorial</title>
+    <script>
+    function factoril_num(num1)
+      {
+            str=" ";
+            str=str+"<table>"
+
+         for(var i=1;i<=num1;i++)  
+         {     
+                str=str+"<tr>"
+
+                str+="<td>"
+                str +=i
+                str+="</td>"
+
+                str+="<td>"
+                var num=i;
+                var fact=1;
+                while(num>0)
+                {
+                    fact=fact*num;
+                    num--;
+                }
+                str+=fact;
+                str+="</td>"
+
+                str=str+"</tr>"
+        }
+            str=str+"</table>"
+            document.getElementById("fact").innerHTML=str;
+      }
+    </script>
+</head>
+<body>
+    <form>   
+    <input type="button" value="Factorial Table" name="fact1" onclick="factoril_num(num1.value)" /><br/>
+    <input type="number" name="num1" />
+    </form>
+
+    <p id="fact"></p>
+</body>
+</html>

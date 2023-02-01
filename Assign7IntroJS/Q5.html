@@ -1,0 +1,158 @@
+<!-- <!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        Check a number is Prime or
+        not using JavaScript
+    </title>
+     
+    <script type="text/javascript">
+         
+        function check(p){
+                for(let i = 3; i <= Math.sqrt(p); i+=2)
+                if (p % i === 0) {
+                    return true ;
+                }
+            return false;
+            }
+     
+        // Function to check prime number
+        function p() {
+             
+            var n;
+             
+            // Getting the value form text
+            // field using DOM
+            n = document.myform.n.value;
+            n = parseInt(n)
+             
+            // Check and display alert message
+            if( n % 2 === 0 )
+                alert(n + " is not prime");
+            else if(check(n))
+                alert(n + " is not prime");
+            else
+                alert(n + " is prime");
+             
+        }
+    </script>
+</head>
+ 
+<body>
+    <center>
+        <h1>GeeksforGeeks</h1>
+         
+        <h4>check number is prime or not</h4>
+         
+        <hr color="Green">
+         
+        <form name="myform">
+            Enter the number:
+            <input type="text" name=n value="">
+             
+            <br><br>
+             
+            <input type="button" value="Check" onClick="p()">
+            <br>
+        </form>
+    </center>
+</body>
+ 
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime</title>
+
+<script>
+      function prime(pno)
+      {
+          var flag= false;
+        for(var i=2;i<pno;i++)
+        {
+            if(pno%i==0)
+            {
+                flag=true;
+                break;
+            }
+        }
+        if(flag==true)
+        {
+            // document.write(" is a not prime number"+pno);
+            //alert(" is a not prime number "+pno);
+            document.getElementById("result").innerHTML=" prime not "+pno;
+        }
+        else
+        //document.write(" prime number  by "+pno);
+       // alert(" prime number  by alert"+pno);
+       document.getElementById("result").innerHTML=" prime number  "+pno;
+      }
+
+      //prime(11);
+</script>
+
+        
+    
+</head>
+<body>
+    <!-- <Script>
+        prime(11);
+    </Script> -->
+    
+    
+    <!-- <input type="button" value="Calculate" onclick="prime(13)" />
+
+    <p id="result">  </p>
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime</title>
+
+<script>
+ function prime()
+{
+        for(var i=100;i<=200;i++)
+     {
+          var flag= true;
+        for(var j=2;j<i;j++)
+        {
+            if(i%j==0)
+            {
+                flag=false;
+                break;
+            }
+        }
+        if(flag==true)
+        {
+            document.write(" "+i);
+            //alert(" is a not prime number "+pno);
+            // document.getElementById("result").innerHTML=" prime number "+i;
+
+        }
+    }
+ }
+
+</script>
+
+        
+    
+</head>
+<body>
+   
+    <input type="button" value="Calculate" onclick="prime()" />
+
+    <p id="result"> Welcome  </p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function emailvalidation(a,b)
+        {
+            var mail=/^[\w]{5,}@[\w]{3,8}\.[a-z]{3}$/
+            if(!mail.test(a))
+            {
+            document.getElementById("error").innerHTML="Email not valid..."
+            }
+
+            var occ=document.getElementById("occ1").value;
+            if(occ== " ")
+            {
+                document.getElementById("error2").innerHTML="Select Occupation";
+            }
+
+
+            var re = document.f1.rec1.checked;
+            var re1 = document.f1.rec.checked;
+            if(!re && !re1)
+            {
+                document.getElementById("error3").innerHTML="select one option..."
+            }
+        }
+
+        
+            
+
+
+    </script>
+</head>
+<body>
+    <table border="0" style="border-collapse:collapse">
+        <form name="f1" action=" " method="get">
+        <tr>
+            <td colspan="2"> <h2>Visitor information</h2></td>
+        
+        </tr>
+        <tr>
+        
+           <td><label for="Email address">Email address:</label></td> 
+           <td> <input type="email" name="Email" id="Email address"/></td>
+           <td><lable style="color:red" name="error" id="error"></lable></td>
+            </tr>
+
+            <tr>
+                <td> Do you use web for:</td>
+                <td><input type="checkbox" name="o1"/>Research
+                    <input type="checkbox" name="o2"/>purchase
+                 </td>
+                
+            </tr>
+            <tr>
+                <td><lable for="occupation"> Select Occupation:</lable> </td>
+
+                <td>
+                    <Select name="Select">
+                        <option value=" " id="occ1">(select one)</option>
+                        <option> Farmer</option>
+                        <option> IT Developer</option>
+                        <option> Engineer</option>
+                        <option> Doctor</option>
+                        <option> Pharmasist</option>
+                        <option> Tester</option>
+                    </Select>
+                </td>
+                <td><span style="color:red" name="error" id="error2"></span></td>
+            </tr>
+            <tr>
+                <td> Want us to send you junk email?</td>
+                <td><input type="radio" name="option" value="Absolutely" id="rec1"/>Absolutely
+                    <input type="radio" name="option" value="No way,Man"id="rec"/>No way,Man
+                </td> 
+                <td><lspan style="color:red" name="error" id="error3"></span></td>   
+            </tr>
+            <tr>
+                <td><input type="button" target="_self" value ="SUBMIT" onclick="emailvalidation(Email.value,select.value,option.value)" /> </td>
+                <td> <input type="button" value="RESET" /></td>
+
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

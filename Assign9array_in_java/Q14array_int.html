@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         arr=[10,23,9,15,25,21,19]
+         function myreduce(acc,value)
+         {
+             return acc+value;
+         }
+
+         var sum= arr.reduce(myreduce);
+         document.write("Sum: "+sum);
+
+         document.write("<br/>")
+        var avg= arr.reduce((a,v) => a+v);
+          document.write("Sum: "+parseInt(avg/5));
+
+          document.write("<br/>")
+        var max= arr.reduce(function(a,v){return a>v?a:v} );
+          document.write("Max: "+parseInt(max));
+
+          document.write("<br/>")
+        var min= arr.reduce(function(a,v){return a<v?a:v} );
+          document.write("Min: "+parseInt(min));
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

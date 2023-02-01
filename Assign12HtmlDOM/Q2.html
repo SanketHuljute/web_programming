@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onmouse()
+        {
+            var data=document.getElementById("a1");
+            re=data.style;
+            
+            data.style="margin-top: 40px;  font-family: 'Ubuntu', sans-serif;  font-size: 70px;  font-weight: bold;  color: #CFC547;  text-align: center;  letter-spacing: 5px;  text-shadow: 16px 22px 11px rgba(168,158,32,0.8);"   
+        }
+        function offmouse()
+        {
+            var data=document.getElementById("a1");
+            data.style=re;
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center" onmouseover="onmouse()" onmouseout="offmouse()" id="a1"><center>GOOD MORNING</center></h1>
+
+</body>
+</html>

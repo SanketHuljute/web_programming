@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+       document.write(" <br/>*****first charater is Capital*******<br/>");
+        var pat= /^[A-Z]{1}[a-z]{1,}$/ 
+        var str="Sanket"
+        document.write(pat.test(str)); 
+
+        var pat= /^[A-Z]{1}[a-z]{1,}$/ 
+        var str="sanket"
+        document.write("<br/>"+pat.test(str)); 
+
+        document.write(" <br/>*****FullName*******<br/>");
+
+        var pat= /[A-Z]{1}[a-z]{1,}\s[A-Z]{1}[a-z]{1,}/ 
+        var str="Sanket Huljute"
+        document.write(pat.test(str)); 
+
+        var pat= /[A-Z]{1}[a-z]{1,}\s[A-Z]{1}[a-z]{1,}/ 
+        var str="sanket huljute"
+        document.write("<br/>"+pat.test(str)); 
+
+        document.write(" <br/>*****Number*******<br/>");
+
+        var pat= /^\+91\-[\d]{10}$/ 
+        var str="+91-5425154555"
+        document.write(pat.test(str)); 
+
+        document.write(" <br/>******Email******<br/>");
+
+        var pat= /^[\w]{5,}@[\w]{3,}\.[a-z]{2,3}$/ 
+        var str="Abhishekverma1346@gmail.com"
+        document.write(pat.test(str)); 
+
+        document.write(" <br/>******Name******<br/>");
+
+        var pat= /^[A-Z]{2}\-[A-Z]{3,8}$/ 
+        var str="PG-CDAC"
+        document.write(pat.test(str)); 
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS in using object</title>
+    <script>
+
+        function f1()
+        {
+            var s = document.getElementById("str").value;
+            alert(s.length);
+        }
+
+        function f2()
+        {
+            var s = document.getElementById("str").value;
+            alert(s.toUpperCase());
+        }
+
+        function f3()
+        {
+            var s = document.getElementById("str").value;
+            alert(s.toLowerCase());
+        }
+
+        
+        function f4(str)
+           {
+             var re=/w/ ;
+            
+             document.getElementById("str1").innerHTML=re.test(str);
+           
+            document.getElementById("str1").innerHTML+="<br/>"+str.indexOf("w");
+           }
+
+           function f5(str)
+           {
+             document.getElementById("str1").innerHTML=str.charAt(4);
+         
+             document.getElementById("str1").innerHTML+="<br/>"+str.charCodeAt(4);
+           }
+
+           function f6()
+           {
+          
+            var s1= document.getElementById("str").value;
+            var s2= document.getElementById("str3").value;
+
+              alert(s1.concat(s2));
+
+           }
+
+           function f7()
+           {
+            var s1= document.getElementById("str3").value;
+            var arr=s1.split(" ");
+            alert(arr.toString());
+                   }
+
+    </script>
+</head>
+<body>
+    <form>
+        Enter the String:
+        <input type="text" id="str" name="name" /><br/>
+        <input type="button" onclick="f1()" value="String_Length" /><br/>
+
+        <input type="button" onclick="f2()" value="String_UpperCase" /><br/>
+
+        <input type="button" onclick="f3()" value="String_LowerCase" /><br/>
+
+         <!-- search w present or not and also index of w in string  -->
+       <input type="button" value="RegExp" onclick="f4(str.value)" /><br/>
+
+       <input type="button" value="indexof_char" onclick="f5(str.value)" /><br/>
+
+       <!--acccept two string from user and concatenate-->
+       enter the string2:
+       <input type="text" name="n1" id="str3" /> <br/>
+        
+         <input type="button" value="concatenate_string" onclick="f6()" /><br/>
+
+         <input type="button" value="split_string" onclick="f7()" /><br/>
+
+    </form>
+    <p id="str1"></p>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           function f1()
+           {
+              var s= document.getElementById("str").value;
+              alert(s.length);
+              
+           }
+
+           function f2()
+           {
+            var s= document.getElementById("str").value;
+              alert(s.toUpperCase());
+           }
+
+           function f3(str)
+           {
+
+           var s=document.getElementById("str").value;
+            alert(s.toLowerCase());
+            
+            // document.getElementById("str1").innerHTML=str.toLowerCase();
+           }
+
+           function f4(str)
+           {
+             var re=/w/ ;
+            
+             document.getElementById("str1").innerHTML=re.test(str);
+           
+            document.getElementById("str1").innerHTML+="<br/>"+str.indexOf("w");
+           }
+
+           function f5(str)
+           {
+             document.getElementById("str1").innerHTML=str.charAt(4);
+         
+             document.getElementById("str1").innerHTML+="<br/>"+str.charCodeAt(4);
+           }
+
+       
+        function f6()
+           {
+          
+            var s1= document.getElementById("str").value;
+            var s2= document.getElementById("str3").value;
+
+              alert(s1.concat(s2));
+
+           }
+
+           function f7()
+           {
+            var s1= document.getElementById("str3").value;
+            var arr=s1.split(" ");
+            alert(arr.toString());
+                   }
+
+
+    </script>
+</head>
+<body>
+    <form>
+        enter the string1:
+        <input type="text" name="name" id="str" /> <br/>
+
+        <input type="button" value="length_string" onclick="f1()" /><br/>
+        <input type="button" value="String_Upper_case" onclick="f2()" /><br/>
+
+        <input type="button" value="String_Lower_case" onclick="f3(str.value)" /><br/>
+        // search w present or not and also index of w in string
+         <input type="button" value="RegExp" onclick="f4(str.value)" /><br/>
+
+         <input type="button" value="indexof_char" onclick="f5(str.value)" /><br/>
+         //acccept two string from user and concatenate
+         enter the string2:
+         <input type="text" name="n1" id="str3" /> <br/>
+          // <input type="button" value="concatenate_string" onclick="f6(str.value,str3.value)" /><br/> 
+
+           <input type="button" value="concatenate_string" onclick="f6()" /><br/>
+
+           <input type="button" value="split_string" onclick="f7()" /><br/>
+
+
+       
+    </form>
+    <p id="str1" ></p>
+  
+</body>
+</html> -->

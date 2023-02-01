@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIDPWDvalidation</title>
+
+    <script>
+        function uidvalidation(a,b)
+        {
+            var uidpattern=/^[\w]{5,15}$/
+            
+            if(!uidpattern.test(a))
+            {
+                document.getElementById("error").innerHTML="error!!!uid in between 5-15";
+            }
+
+            var pwdpattern=/^[\w]{8,15}$/
+            if(!pwdpattern.test(b))
+            {
+                document.getElementById("error1").innerHTML="error!!pwd in bedtween 8-15";
+            }
+        }
+    </script>
+</head>
+<body Style="text-align:center"> 
+    <table border="0" style="border-collapse:collapse">
+    <form action=" " method="post" >
+        <tr>
+       <td><label for ="uid">uid:</label></td> 
+        <td><input type="text" name="uid" id="uid"/></td>
+        <td><lable style="color:red" name="error" id="error"> </lable></td>
+    </tr>
+     <tr>
+        <td><label for ="pwd">pwd:</label></td>
+        <td><input type="password" name="pwd" id="pwd"/></td>
+        <td><lable style="color:red" name="error1" id="error1"> </lable></td>
+    </tr>
+
+<tr>
+    <td><input type="button" target="_self" value="LOGIN" onclick="uidvalidation(uid.value,pwd.value)" /></td> 
+
+     <td><input type="reset" value="CANCEL" /> </td> 
+    </tr>
+   
+    </form>
+</table>
+</body>
+</html>

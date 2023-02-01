@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in java</title>
+    <script>
+        arr=[10,23,9,15,25,21,19]
+      
+        document.write("<br/> Display by normal for loop")
+        document.write("<ol type='1'>")
+            for(i=0;i<=5;i++)
+            {
+                document.write("<li> "+arr[i]+"</li>");
+            }
+            document.write("</ol>")
+
+            document.write("<br/> display by  for each loop")
+            document.write("<ul>")
+                for( i in arr)
+                {
+                    document.write("<li> "+arr[i]+"</li>");
+                }
+                document.write("</ul>")
+
+
+        document.write("Normal array <br/>" +arr);
+        document.write("<br/>");
+
+        document.write("<br/> Using named function<br/>"+arr.sort());
+        document.write("<br/>");
+
+        document.write("<br/> Array with sorting named function <br/>"+arr.toString());
+        document.write("<br/>");
+
+        document.write("<br/>Array using join <br/>" +arr.join("*"));
+        document.write("<br/>");
+        document.write("<br/>**************************************<br/>");
+      
+        document.write(" <br/>");
+        document.write(" <br/> USING ANONYMOUS FUNCTION<br/>");
+            arr.sort(function(a,b) {return a-b;})
+            document.write("<br/>Array with asc sorting Anonymous function<br>"+arr.toString())
+            document.write("<br/>");
+
+            arr.sort(function(a,b) {return b-a;})
+            document.write("<br/>Array with desc sorting Anonymous function<br>"+arr.toString())
+            document.write("<br/>");
+
+            document.write("<br/>");
+        document.write("<br/>**************************************<br/>");
+      
+        document.write(" <br/> USING ARROW FUNCTION<br/>");
+            arr.sort((a,b) => a-b)
+            document.write("<br/>Array with asc sorting Anonymous function<br>"+arr.toString())
+            document.write("<br/>");
+            arr.sort((a,b) => b-a)
+            document.write("<br/>Array with desc sorting Anonymous function<br>"+arr.toString())
+        
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function arrprompt()
+        {
+            var arr=[5];
+            for(var i=0;i<5;i++)
+            {
+                arr[i]=prompt("Enter the number: ");
+                document.write(" "+arr[i]);
+            }
+
+            //document.write("<br/>Display by normal for loop")
+            // document.write("<ol type='1'>")
+            //     arr=[10,23,9,15,25,21,19]
+            // for(i=o;i<5;i++)
+            // {
+                
+            //     document.write("<li>"+arr[i]+"</li>");
+            // }
+            // document.write("</ol>")
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h1>Add array element by using prompt</h1>
+        <button onclick="arrprompt()">add element in arr</button>
+    </form>
+
+</body>
+</html> -->
